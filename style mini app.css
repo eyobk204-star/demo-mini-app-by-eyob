@@ -104,6 +104,9 @@ main{
     margin-bottom: 10%;
     z-index: 999;
 }
+.content h1 {
+  font-size: 0.5rem !important;
+}
 
 .tag-box{
     position: relative;
