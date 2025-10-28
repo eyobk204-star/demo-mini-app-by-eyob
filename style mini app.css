@@ -582,6 +582,7 @@ main{
   /* smaller text adjustments */
   body { font-size: 14px; }
 
+
 /* extra performance-friendly tweaks for very old Android webviews */
 @supports (-webkit-overflow-scrolling: touch) {
   /* remove heavy filters/shadows on older engines */
@@ -615,43 +616,3 @@ main{
 
 /* ...existing code... */
 
-/* Mobile tweak: nudge primary buttons down for small screens */
-@media (max-width: 480px) {
-  .btn-get-started,
-  .btn-signing-main {
-    position: relative;
-    transform: translateY(10px); /* change value to move further down/up */
-    margin-top: 9px;
-    /* ensure full-width touch targets if you use the mobile rules */
-    width: calc(100% - 2rem) !important;
-    max-width: none !important;
-  }
-
-  /* Optional: reduce focus outline on small devices */
-  .btn-get-started:focus,
-  .btn-signing-main:focus {
-    outline-offset: 4px;
-  }
-}
-
-/* ...existing code... */
-
-/* Mobile tweak: nudge primary buttons down for small screens */
-@media (max-width: 480px) {
-  .btn-get-started,
-  .btn-signing-main {
-    position: relative;
-    transform: translateY(10px); /* change value to move further down/up */
-    margin-top: 9px;
-    /* ensure full-width touch targets if you use the mobile rules */
-    width: calc(100% - 2rem) !important;
-    max-width: none !important;
-  }
-
-  /* Optional: reduce focus outline on small devices */
-  .btn-get-started:focus,
-  .btn-signing-main:focus {
-    outline-offset: 4px;
-  }
-}
- /* ...existing code... */
